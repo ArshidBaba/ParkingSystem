@@ -2,11 +2,6 @@ class ParkingLot:
     """
     A class to represent a parking lot with two levels, A and B.
     Each level has the capacity to park 20 vehicles of any size.
-
-    Attributes:
-        capacity_per_level (int): The maximum number of parking spots per level.
-        levels (dict): A dictionary to store vehicle information based on level.
-            Example: {"A": {"vehicle_number": spot_number}, "B": {"vehicle_number": spot_number"}}
     """
 
     def __init__(self):
@@ -16,9 +11,6 @@ class ParkingLot:
     def assign_parking_spot(self, vehicle_number):
         """
         Assigns a parking spot to a new vehicle.
-
-        Args:
-            vehicle_number (str): The unique identifier of the vehicle.
 
         Returns:
             dict or str: A dictionary containing the level and parking spot number if a spot is assigned,
@@ -34,9 +26,6 @@ class ParkingLot:
     def retrieve_parking_spot(self, vehicle_number):
         """
         Retrieves the parking spot for a particular vehicle.
-
-        Args:
-            vehicle_number (str): The unique identifier of the vehicle.
 
         Returns:
             dict or str: A dictionary containing the level and parking spot number if the vehicle is found,
